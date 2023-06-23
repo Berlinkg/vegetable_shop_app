@@ -14,11 +14,11 @@ class ItenPage extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.all(15),
+                margin: const EdgeInsets.all(15),
                 height: 350,
                 width: double.infinity,
                 alignment: Alignment.centerLeft,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   // color: Colors.blue,
                   image: DecorationImage(
                     image: AssetImage("assets/images/2.png"),
@@ -28,7 +28,7 @@ class ItenPage extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.arrow_back,
                     size: 30,
 
@@ -40,9 +40,9 @@ class ItenPage extends StatelessWidget {
               ),
               Container(
                 height: MediaQuery.of(context).size.height * 0.4,
-                margin: EdgeInsets.only(top: 20),
-                padding: EdgeInsets.all(15),
-                decoration: BoxDecoration(
+                margin: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.all(15),
+                decoration: const BoxDecoration(
                   color: Colors.green,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
@@ -52,11 +52,11 @@ class ItenPage extends StatelessWidget {
                   // crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(top: 10, bottom: 15),
+                      padding: const EdgeInsets.only(top: 10, bottom: 15),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "fruit title",
                             style: TextStyle(
                                 color: Colors.white,
@@ -66,23 +66,17 @@ class ItenPage extends StatelessWidget {
                           Row(
                             children: [
                               Container(
-                                padding: EdgeInsets.all(3),
+                                padding: const EdgeInsets.all(3),
                                 decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(20),
-                                    boxShadow: [
-                                      // BoxShadow(
-                                      //   color: Colors.grey.withOpacity(0.5),
-                                      //   spreadRadius: 2,
-                                      //   blurRadius: 8,
-                                      //   offset: Offset(0, 3),
-                                      // )
-                                    ]),
-                                child: Icon(CupertinoIcons.minus),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: const Icon(CupertinoIcons.minus),
                               ),
                               Container(
-                                margin: EdgeInsets.symmetric(horizontal: 10),
-                                child: Text(
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 10),
+                                child: const Text(
                                   "01",
                                   style: TextStyle(
                                       fontSize: 20,
@@ -91,26 +85,27 @@ class ItenPage extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                padding: EdgeInsets.all(3),
+                                padding: const EdgeInsets.all(3),
                                 decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(20),
-                                    boxShadow: [
-                                      // BoxShadow(
-                                      //   color: Colors.grey.withOpacity(0.5),
-                                      //   spreadRadius: 2,
-                                      //   blurRadius: 8,
-                                      //   offset: Offset(0, 3),
-                                      // )
-                                    ]),
-                                child: Icon(CupertinoIcons.plus),
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                  // boxShadow: [
+                                  // BoxShadow(
+                                  //   color: Colors.grey.withOpacity(0.5),
+                                  //   spreadRadius: 2,
+                                  //   blurRadius: 8,
+                                  //   offset: Offset(0, 3),
+                                  // )
+                                  // ]
+                                ),
+                                child: const Icon(CupertinoIcons.plus),
                               )
                             ],
                           )
                         ],
                       ),
                     ),
-                    Row(
+                    const Row(
                       children: [
                         Icon(
                           Icons.star,
@@ -126,7 +121,7 @@ class ItenPage extends StatelessWidget {
                         )
                       ],
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.symmetric(vertical: 10),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -152,10 +147,10 @@ class ItenPage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
-                    Row(
+                    const Row(
                       // crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(

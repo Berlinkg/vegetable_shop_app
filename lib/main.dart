@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => HomePage(),
-        "SpleshCreen": (context) => SpleshCreen(),
+        "/": (context) => const HomePage(),
+        "SpleshCreen": (context) => const SpleshCreen(),
         "ItenPage": (context) => ItenPage()
       },
       // home: HomePage(),

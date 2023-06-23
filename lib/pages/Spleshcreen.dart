@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,10 +22,10 @@ class _HomePageState extends State<HomePage> {
               height: 300,
             ),
             Container(
-              margin: EdgeInsets.only(
+              margin: const EdgeInsets.only(
                 top: 50,
               ),
-              child: Text(
+              child: const Text(
                 "tovar",
                 style: TextStyle(
                     color: Colors.white,
@@ -32,7 +33,7 @@ class _HomePageState extends State<HomePage> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             InkWell(
@@ -40,14 +41,14 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pushReplacementNamed(context, "SpleshCreen");
               },
               child: Ink(
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 80,
                   vertical: 15,
                 ),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
                     color: Colors.blueGrey),
-                child: Text(
+                child: const Text(
                   "get started baying somsing",
                   style: TextStyle(
                     color: Colors.amber,

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class PopularItemsWidget extends StatelessWidget {
-  // const PopularItemsWidget({super.key});
+  const PopularItemsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(
+        const Padding(
           padding: EdgeInsets.only(left: 10, right: 10, bottom: 5, top: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -40,8 +40,8 @@ class PopularItemsWidget extends StatelessWidget {
             children: [
               for (int i = 1; i < 8; i++)
                 Container(
-                  margin: EdgeInsets.all(10),
-                  padding: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(5),
                   height: 100,
                   width: 150,
                   decoration: BoxDecoration(
@@ -52,7 +52,8 @@ class PopularItemsWidget extends StatelessWidget {
                         color: Colors.grey.withOpacity(0.5),
                         spreadRadius: 5,
                         blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
+                        offset:
+                            const Offset(0, 3), // changes position of shadow
                       ),
                     ],
                   ),

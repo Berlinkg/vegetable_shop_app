@@ -6,7 +6,7 @@ class BottomCardsheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 20),
+      padding: const EdgeInsets.only(top: 20),
       height: 600,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -18,7 +18,7 @@ class BottomCardsheet extends StatelessWidget {
                 children: [
                   // for (int i = 1; i < 8; i++)
                   Container(
-                    margin: EdgeInsets.symmetric(
+                    margin: const EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 15,
                     ),
@@ -37,7 +37,7 @@ class BottomCardsheet extends StatelessWidget {
                     child: Row(
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Image.asset(
                             "assets/images/1.png",
                             // height: 20,

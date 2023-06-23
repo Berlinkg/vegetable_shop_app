@@ -4,7 +4,7 @@ import 'package:sliding_sheet/sliding_sheet.dart';
 import 'package:tez_tabuu/widgets/BottomCardsheet.dart';
 import 'package:tez_tabuu/widgets/ItemsWidget.dart';
 import 'package:tez_tabuu/widgets/PopularItemsWidgets.dart';
-import 'package:flutter/src/widgets/framework.dart';
+// import 'package:flutter/src/widgets/framework.dart';
 
 import '../widgets/CatigoriesWidget.dart';
 
@@ -20,7 +20,7 @@ class SpleshCreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 left: 20,
                 right: 15,
                 top: 10,
@@ -28,7 +28,7 @@ class SpleshCreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.menu,
                     color: Colors.white,
                     size: 30,
@@ -45,7 +45,7 @@ class SpleshCreen extends StatelessWidget {
                         ]),
                     child: Badge(
                       backgroundColor: Colors.red,
-                      padding: EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(5),
                       // textStyle: Colors.black,
                       child: InkWell(
                         onTap: () {
@@ -59,7 +59,7 @@ class SpleshCreen extends StatelessWidget {
                             );
                           });
                         },
-                        child: Icon(
+                        child: const Icon(
                           CupertinoIcons.cart,
                           size: 30,
                           color: Colors.white,
@@ -72,8 +72,8 @@ class SpleshCreen extends StatelessWidget {
             ),
             Container(
               alignment: Alignment.centerLeft,
-              padding: EdgeInsets.symmetric(horizontal: 15),
-              child: Column(
+              padding: const EdgeInsets.symmetric(horizontal: 15),
+              child: const Column(
                 children: [
                   Text(
                     'welcom',
@@ -89,12 +89,12 @@ class SpleshCreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
-              margin: EdgeInsets.all(15),
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              margin: const EdgeInsets.all(15),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               height: 45,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -102,26 +102,26 @@ class SpleshCreen extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Icon(Icons.search),
+                  const Icon(Icons.search),
                   Container(
-                    margin: EdgeInsets.all(15),
+                    margin: const EdgeInsets.all(15),
                     width: 250,
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         hintText: "Search hear.....",
                         border: InputBorder.none,
                       ),
                     ),
                   ),
-                  Spacer(),
-                  Icon(Icons.filter_list)
+                  const Spacer(),
+                  const Icon(Icons.filter_list)
                 ],
               ),
             ),
             // продукт виджети
             Container(
-              padding: EdgeInsets.only(top: 15),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.only(top: 15),
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(30),
@@ -131,8 +131,8 @@ class SpleshCreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  CategoriesWidget(),
-                  PopularItemsWidget(),
+                  const CategoriesWidget(),
+                  const PopularItemsWidget(),
                   ItemsWidget(),
                 ],
               ),

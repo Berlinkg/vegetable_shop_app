@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/src/widgets/framework.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,7 @@ class CategoriesWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(
+        const Padding(
           padding: EdgeInsets.only(
             left: 10,
             right: 10,
@@ -45,7 +45,8 @@ class CategoriesWidget extends StatelessWidget {
               //  меню
               for (int i = 1; i < 8; i++)
                 Container(
-                    margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                    margin:
+                        const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                     height: 50,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
@@ -55,11 +56,12 @@ class CategoriesWidget extends StatelessWidget {
                           color: Colors.grey.withOpacity(0.5),
                           spreadRadius: 5,
                           blurRadius: 7,
-                          offset: Offset(0, 3), // changes position of shadow
+                          offset:
+                              const Offset(0, 3), // changes position of shadow
                         ),
                       ],
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         // Padding(
                         //   padding: EdgeInsets.all(5),
@@ -69,7 +71,7 @@ class CategoriesWidget extends StatelessWidget {
                         //     width: 50,
                         //   ),
                         // ),
-                        const Padding(
+                        Padding(
                           padding: EdgeInsets.only(right: 5),
                           child: Text(
                             "tando..........",
